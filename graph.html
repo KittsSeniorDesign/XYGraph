@@ -5,12 +5,17 @@
 </head>
 <body onload="StartGraph()">
 <div>
-<canvas id="myCanvas" width="500" height="500"></canvas>
+<canvas id="myCanvas"></canvas>
 <form>
-x{-250,250}:<input type="text" name="xcoord" id="x">
-y{-250,250}:<input type="text" name="ycoord" id="y">
-color:<input type="text" name="color" id="ccolor">
-<input type="button" value="Submit" onclick="StartGraph()">
+x:<input type="text" name="xcoord" value = "0" id="x">
+y:<input type="text" name="ycoord" value="0" id="y">
+color:<input type="text" name="color" value= "black" id="ccolor">
+<input type="button" value="Add Robot" onclick="AddRobot()">
+<br>
+x:<input type="text" name="xcoord" id="cx">
+y:<input type="text" name="ycoord" id="cy">
+ID:<input type="text" name="roboid" id="roboid">
+<input type="button" value="Change Location" onclick="changeLocation()">
 </form>
 <div id="buttons">
   <button onmousedown="moveup()" onmouseup="clearmove()" ontouchstart="moveup()">UP</button><br><br>
